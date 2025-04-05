@@ -3,6 +3,9 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 1px solid rgb(207, 207, 207);
 }
 
 .container {
@@ -26,8 +29,8 @@ h1 {
 h2 {
   background-color: rgb(168, 18, 18);
   text-align: center;
-color: white;
-border-radius: 10px;
+  color: white;
+  border-radius: 10px;
 }
 p {
   font-size: 16px;
@@ -42,7 +45,11 @@ body::after {
   width: 5px;
   background-color: #ccc;
 }
-
+.celkem_zaku,
+.celkem_trid {
+  text-align: right;
+  color: red;
+}
 body::before {
   left: 0;
 }
@@ -50,41 +57,26 @@ body::before {
 body::after {
   right: 0;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-.table {
-  width: 100%;
+caption {
+  background-color: rgb(26, 27, 26);
+  color: white;
+}
+table {
+  width: 95%;
   border-collapse: collapse;
-  margin: 20px 0;
+  justify-self: center;
 }
 
-.table th,
-.table td {
+table th,
+table td {
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #a8a8a8;
 }
 
-.table th {
-  background-color: #f4f4f4;
-  text-align: left;
+table thead {
+  background-color: #d1d1d1;
 }
-
-.table tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-body {
-    margin-left: 25%;
-    margin-right: 25%;
+table tfoot {
+  background-color: #d1d1d1;
 }
